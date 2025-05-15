@@ -11,6 +11,12 @@ grade_points = {
     'F': 0.0
 }
 
+# ---------- Grade Legend in Sidebar ----------
+st.sidebar.title("📘 Grade Point Legend")
+for grade, point in grade_points.items():
+    st.sidebar.markdown(f"**{grade}** = {point}")
+
+# ---------- Main App ----------
 st.title("🎓 GPA & CGPA Calculator")
 
 # ---------- Number of Semesters ----------
