@@ -52,7 +52,7 @@ st.sidebar.markdown(
             <li style="margin-bottom:18px;"><b>3.70 - 4.00</b>: Excellent</li>
             <li style="margin-bottom:18px;"><b>3.30 - 3.69</b>: Very Good</li>
             <li style="margin-bottom:18px;"><b>3.00 - 3.29</b>: Good</li>
-            <li style="margin-bottom:18px;"><b>Below 3.00</b>: Fail</li>
+            <li style="margin-bottom:18px;"><b> < 3.00</b>: Fail</li>
         </ul>
     </div>
     """,
