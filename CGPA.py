@@ -23,7 +23,7 @@ st.markdown(
     <h1 style='
         text-align: center; 
         white-space: nowrap; 
-        font-size: 48px; 
+        font-size: 40px; 
         margin-top: -30px;  /* Move up by -20 pixels */
     '>
         🎓 UoS Masters Program GPA and CGPA Calculator
