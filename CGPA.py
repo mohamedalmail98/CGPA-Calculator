@@ -24,7 +24,7 @@ st.markdown(
         text-align: center; 
         white-space: nowrap; 
         font-size: 48px; 
-        margin-top: -20px;  /* Move up by 30 pixels */
+        margin-top: -30px;  /* Move up by 30 pixels */
     '>
         🎓 Masters GPA and CGPA Calculator
     </h1>
