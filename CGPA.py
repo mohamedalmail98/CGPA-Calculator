@@ -20,10 +20,18 @@ for grade, point in grade_points.items():
 
 st.markdown(
     """
-    <h2 style='text-align: center; white-space: nowrap;'>🎓 UoS Master Program GPA & CGPA Calculator</h2>
+    <h1 style='
+        text-align: center; 
+        white-space: nowrap; 
+        font-size: 48px; 
+        margin-top: -20px;  /* Move up by 20 pixels */
+    '>
+        🎓 Masters GPA and CGPA Calculator
+    </h1>
     """,
     unsafe_allow_html=True
 )
+
 
 
 # ---------- Number of Semesters ----------
