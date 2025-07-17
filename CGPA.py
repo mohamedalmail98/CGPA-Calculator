@@ -23,6 +23,7 @@ def cgpa_legend(cgpa):
         return "Fail"
 
 # ---------- Sidebar Legends ----------
+# ---------- Grade Point Legend ----------
 st.sidebar.markdown(
     """
     <div style="font-family:sans-serif; line-height:1.1; padding-left:5px;">
@@ -36,14 +37,16 @@ st.sidebar.markdown(
             <li style="margin-bottom:15px;"><b>F</b> = 0.0</li>
         </ul>
     </div>
+
+    <hr style="border: 0; height: 1px; background: #DDD; margin: 10px 0;">
     """,
     unsafe_allow_html=True,
 )
 
-
+# ---------- Performance Legend ----------
 st.sidebar.markdown(
     """
-    <div style="font-family:sans-serif; line-height:1.4; padding-left:5px; margin-top: -10px;">
+    <div style="font-family:sans-serif; line-height:1.4; padding-left:5px; margin-top:-10px;">
         <h3 style="margin-bottom:5px;">📊 CGPA Performance Legend</h3>
         <ul style="list-style:none; padding-left:0; margin-top:0; margin-bottom:0; font-size:14px;">
             <li style="margin-bottom:12px;"><b>3.70 - 4.00</b>: Excellent</li>
