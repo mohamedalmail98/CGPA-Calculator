@@ -35,10 +35,19 @@ st.sidebar.markdown(
             <li style="margin-bottom:10px;"><b>C</b> = 2.0</li>
             <li style="margin-bottom:10px;"><b>F</b> = 0.0</li>
         </ul>
+
+        <h3 style="margin-bottom:5px;">📊 CGPA Performance Legend</h3>
+        <ul style="list-style:none; padding-left:0; margin-top:0; font-size:14px;">
+            <li style="margin-bottom:10px;"><b>3.70 - 4.00:</b> Excellent</li>
+            <li style="margin-bottom:10px;"><b>3.30 - 3.69:</b> Very Good</li>
+            <li style="margin-bottom:10px;"><b>3.00 - 3.29:</b> Good</li>
+            <li style="margin-bottom:10px;"><b>Below 3.00:</b> Fail</li>
+        </ul>
     </div>
     """,
     unsafe_allow_html=True,
 )
+
 
 
 st.sidebar.markdown("---")
