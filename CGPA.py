@@ -25,12 +25,13 @@ def cgpa_legend(cgpa):
 # ---------- Sidebar Legends ----------
 st.sidebar.title("📘 Grade Point Legend")
 for grade, point in grade_points.items():
-    st.sidebar.markdown(f"**{grade}** = {point}")
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📊 CGPA Performance Legend")
+    st.sidebar.markdown(
+    "<h3 style='margin-bottom:2px;'>📊 CGPA Performance Legend</h3>",
+    unsafe_allow_html=True,
+)
 st.sidebar.markdown(
     """
-    <div style="font-size:12px; line-height:1.2; margin-top:-10px;">
+    <div style="font-size:12px; line-height:1.2; margin-top:-15px;">
     <ul style="padding-left: 15px;">
         <li><b>3.70 - 4.00:</b> Excellent</li>
         <li><b>3.30 - 3.69:</b> Very Good</li>
@@ -41,6 +42,7 @@ st.sidebar.markdown(
     """,
     unsafe_allow_html=True,
 )
+
 
 
 # ---------- Main App ----------
