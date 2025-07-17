@@ -20,7 +20,7 @@ for grade, point in grade_points.items():
 
 st.markdown(
     """
-    <h2 style='text-align: center; white-space: nowrap; font size: 48px;'>🎓 UoS Master Program GPA & CGPA Calculator</h2>
+    <h2 style='text-align: center; white-space: nowrap; font size: 46px;'>🎓 UoS Master Program GPA & CGPA Calculator</h2>
     """,
     unsafe_allow_html=True
 )
