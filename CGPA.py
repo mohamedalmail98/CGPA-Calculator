@@ -17,10 +17,10 @@ for grade, point in grade_points.items():
     st.sidebar.markdown(f"**{grade}** = {point}")
 
 # ---------- Main App ----------
-st.title("🎓 UoS Master Program GPA & CGPA Calculator")
+
 st.markdown(
     """
-    <h2 style='text-align: center; white-space: nowrap;'>Masters GPA and CGPA Calculator</h2>
+    <h2 style='text-align: center; white-space: nowrap;'>🎓 UoS Master Program GPA & CGPA Calculator</h2>
     """,
     unsafe_allow_html=True
 )
