@@ -26,7 +26,7 @@ st.markdown(
         font-size: 48px; 
         margin-top: -30px;  /* Move up by -20 pixels */
     '>
-        🎓 Masters GPA and CGPA Calculator
+        🎓 UoS Masters Program GPA and CGPA Calculator
     </h1>
     """,
     unsafe_allow_html=True
