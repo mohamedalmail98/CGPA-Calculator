@@ -11,7 +11,7 @@ grade_points = {
     'F': 0.0
 }
 
-# ---------- CGPA Performance Legend ----------
+# ---------- CGPA Performance Legend Function ----------
 def cgpa_legend(cgpa):
     if cgpa >= 3.7:
         return "Excellent"
@@ -22,19 +22,31 @@ def cgpa_legend(cgpa):
     else:
         return "Fail"
 
-# ---------- Sidebar Legends ----------
-st.sidebar.title("📘 Grade Point Legend")
-for grade, point in grade_points.items():
-    st.sidebar.markdown(f"**{grade}** = {point}")
+# ---------- Sidebar Legends with compact styling ----------
+st.sidebar.markdown(
+    """
+    <div style="font-family:sans-serif; line-height:1.1; padding:0 5px;">
+        <h4 style="margin-bottom:5px;">📘 Grade Point Legend</h4>
+        <ul style="list-style-type:none; padding-left:5px; margin-top:0; margin-bottom:10px; font-size:14px;">
+            <li><b>A</b> = 4.0</li>
+            <li><b>B+</b> = 3.5</li>
+            <li><b>B</b> = 3.0</li>
+            <li><b>C+</b> = 2.5</li>
+            <li><b>C</b> = 2.0</li>
+            <li><b>F</b> = 0.0</li>
+        </ul>
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("### 📊 CGPA Performance Legend")
-st.sidebar.markdown("""
-- **3.70 - 4.00:** Excellent  
-- **3.30 - 3.69:** Very Good  
-- **3.00 - 3.29:** Good  
-- **Below 3.00:** Fail  
-""")
+        <h4 style="margin-bottom:5px;">📊 CGPA Performance Legend</h4>
+        <ul style="list-style-type:none; padding-left:5px; margin-top:0; font-size:14px;">
+            <li><b>3.70 - 4.00</b>: Excellent</li>
+            <li><b>3.30 - 3.69</b>: Very Good</li>
+            <li><b>3.00 - 3.29</b>: Good</li>
+            <li><b>Below 3.00</b>: Fail</li>
+        </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
 
 # ---------- Main App ----------
 
@@ -107,5 +119,6 @@ if total_credits > 0:
     # ---------- Show Table ----------
     df = pd.DataFrame(all_semester_data, columns=["Semester", "Semester GPA", "Credits"])
     st.dataframe(df)
+
 
 
