@@ -18,6 +18,13 @@ for grade, point in grade_points.items():
 
 # ---------- Main App ----------
 st.title("🎓 UoS Master Program GPA & CGPA Calculator")
+st.markdown(
+    """
+    <h2 style='text-align: center; white-space: nowrap;'>Masters GPA and CGPA Calculator</h2>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # ---------- Number of Semesters ----------
 num_semesters = st.number_input("Enter number of semesters:", min_value=1, max_value=12, step=1)
