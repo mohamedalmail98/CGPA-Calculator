@@ -38,7 +38,7 @@ st.sidebar.markdown(
         </ul>
     </div>
 
-    <hr style="border: 0; height: 1px; background: #DDD; margin: 20px 0;">
+    <hr style="border: 0; height: 2px; background: #DDD; margin: 20px 0;">
     """,
     unsafe_allow_html=True,
 )
