@@ -49,10 +49,10 @@ st.sidebar.markdown(
     <div style="font-family:sans-serif; line-height:1.4; padding-left:5px; margin-top:20px;">
         <h3 style="margin-bottom:5px;">📊 Performance Legend</h3>
         <ul style="list-style:none; padding-left:0; margin-top:0; margin-bottom:0; font-size:14px;">
-            <li style="margin-bottom:15px;"><b>3.70 - 4.00</b>: Excellent</li>
-            <li style="margin-bottom:15px;"><b>3.30 - 3.69</b>: Very Good</li>
-            <li style="margin-bottom:15px;"><b>3.00 - 3.29</b>: Good</li>
-            <li style="margin-bottom:15px;"><b>Below 3.00</b>: Fail</li>
+            <li style="margin-bottom:18px;"><b>3.70 - 4.00</b>: Excellent</li>
+            <li style="margin-bottom:18px;"><b>3.30 - 3.69</b>: Very Good</li>
+            <li style="margin-bottom:18px;"><b>3.00 - 3.29</b>: Good</li>
+            <li style="margin-bottom:18px;"><b>Below 3.00</b>: Fail</li>
         </ul>
     </div>
     """,
