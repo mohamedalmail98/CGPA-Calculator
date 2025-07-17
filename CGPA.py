@@ -27,7 +27,7 @@ def cgpa_legend(cgpa):
 st.sidebar.markdown(
     """
     <div style="font-family:sans-serif; line-height:1.1; padding-left:5px;">
-        <h3 style="margin-bottom:5px;">📘 Grade Point Legend</h3>
+        <h3 style="margin-bottom:10px;">📘 Grade Point Legend</h3>
         <ul style="list-style:none; padding-left:0; margin-top:0; margin-bottom:20px; font-size:14px;">
             <li style="margin-bottom:15px;"><b>A</b> = 4.0</li>
             <li style="margin-bottom:15px;"><b>B+</b> = 3.5</li>
