@@ -28,12 +28,20 @@ for grade, point in grade_points.items():
     st.sidebar.markdown(f"**{grade}** = {point}")
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 CGPA Performance Legend")
-st.sidebar.markdown("""
-- **3.70 - 4.00:** Excellent  
-- **3.30 - 3.69:** Very Good  
-- **3.00 - 3.29:** Good  
-- **Below 3.00:** Fail  
-""")
+st.sidebar.markdown(
+    """
+    <div style="font-size:12px; line-height:1.2; margin-top:-10px;">
+    <ul style="padding-left: 15px;">
+        <li><b>3.70 - 4.00:</b> Excellent</li>
+        <li><b>3.30 - 3.69:</b> Very Good</li>
+        <li><b>3.00 - 3.29:</b> Good</li>
+        <li><b>Below 3.00:</b> Fail</li>
+    </ul>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 # ---------- Main App ----------
 
