@@ -11,12 +11,7 @@ grade_points = {
     'F': 0.0
 }
 
-# ---------- Grade Legend in Sidebar ----------
-st.sidebar.title("📘 Grade Point Legend")
-for grade, point in grade_points.items():
-    st.sidebar.markdown(f"**{grade}** = {point}")
-
-# ---------- CGPA Result Legend Function ----------
+# ---------- CGPA Performance Legend ----------
 def cgpa_legend(cgpa):
     if cgpa >= 3.7:
         return "Excellent"
@@ -26,6 +21,20 @@ def cgpa_legend(cgpa):
         return "Good"
     else:
         return "Fail"
+
+# ---------- Sidebar Legends ----------
+st.sidebar.title("📘 Grade Point Legend")
+for grade, point in grade_points.items():
+    st.sidebar.markdown(f"**{grade}** = {point}")
+
+st.sidebar.markdown("---")
+st.sidebar.markdown("### 📊 CGPA Performance Legend")
+st.sidebar.markdown("""
+- **3.70 - 4.00:** Excellent  
+- **3.30 - 3.69:** Very Good  
+- **3.00 - 3.29:** Good  
+- **Below 3.00:** Fail  
+""")
 
 # ---------- Main App ----------
 
@@ -99,13 +108,4 @@ if total_credits > 0:
     df = pd.DataFrame(all_semester_data, columns=["Semester", "Semester GPA", "Credits"])
     st.dataframe(df)
 
-    # ---------- Full CGPA Legend for Reference ----------
-    st.markdown("---")
-    st.markdown("### 📊 CGPA Performance Legend")
-    st.markdown("""
-    - **3.70 - 4.00:** Excellent  
-    - **3.30 - 3.69:** Very Good  
-    - **3.00 - 3.29:** Good  
-    - **Below 3.00:** Fail  
-    """)
 
