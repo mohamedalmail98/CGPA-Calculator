@@ -16,6 +16,17 @@ st.sidebar.title("📘 Grade Point Legend")
 for grade, point in grade_points.items():
     st.sidebar.markdown(f"**{grade}** = {point}")
 
+# ---------- CGPA Result Legend Function ----------
+def cgpa_legend(cgpa):
+    if cgpa >= 3.7:
+        return "Excellent"
+    elif 3.30 <= cgpa < 3.7:
+        return "Very Good"
+    elif 3.0 <= cgpa < 3.30:
+        return "Good"
+    else:
+        return "Fail"
+
 # ---------- Main App ----------
 
 st.markdown(
@@ -24,15 +35,13 @@ st.markdown(
         text-align: center; 
         white-space: nowrap; 
         font-size: 35px; 
-        margin-top: -30px;  /* Move up by -20 pixels */
+        margin-top: -30px;
     '>
         🎓 UoS Masters Program GPA and CGPA Calculator
     </h1>
     """,
     unsafe_allow_html=True
 )
-
-
 
 # ---------- Number of Semesters ----------
 num_semesters = st.number_input("Enter number of semesters:", min_value=1, max_value=12, step=1)
@@ -77,11 +86,26 @@ for sem in range(1, num_semesters + 1):
 # ---------- Final CGPA ----------
 if total_credits > 0:
     cgpa = total_quality_points / total_credits
+    legend = cgpa_legend(cgpa)
+    
     st.subheader("🏁 Final Results")
     st.info(f"✅ **Cumulative GPA (CGPA)**: `{cgpa:.2f}`")
+    st.markdown(f"**Performance:** 🏅 {legend}")
+
     st.write(f"📊 Total Quality Points: `{total_quality_points:.2f}`")
     st.write(f"📦 Total Credit Hours: `{total_credits}`")
 
     # ---------- Show Table ----------
     df = pd.DataFrame(all_semester_data, columns=["Semester", "Semester GPA", "Credits"])
     st.dataframe(df)
+
+    # ---------- Full CGPA Legend for Reference ----------
+    st.markdown("---")
+    st.markdown("### 📊 CGPA Performance Legend")
+    st.markdown("""
+    - **3.70 - 4.00:** Excellent  
+    - **3.30 - 3.69:** Very Good  
+    - **3.00 - 3.29:** Good  
+    - **Below 3.00:** Fail  
+    """)
+
