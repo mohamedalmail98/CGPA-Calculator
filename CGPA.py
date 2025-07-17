@@ -27,7 +27,7 @@ st.sidebar.title("📘 Grade Point Legend")
 for grade, point in grade_points.items():
     st.sidebar.markdown(
     """
-    <div style="font-size:12px; line-height:1.2; margin-top:-30px;">
+    <div style="font-size:12px; line-height:1.2; margin-top:-20px;">
     <ul style="padding-left: 15px;">
         <li><b>3.70 - 4.00:</b> Excellent</li>
         <li><b>3.30 - 3.69:</b> Very Good</li>
