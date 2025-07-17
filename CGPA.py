@@ -46,7 +46,7 @@ st.sidebar.markdown(
 # ---------- Performance Legend ----------
 st.sidebar.markdown(
     """
-    <div style="font-family:sans-serif; line-height:1.4; padding-left:5px; margin-top:-10px;">
+    <div style="font-family:sans-serif; line-height:1.4; padding-left:5px; margin-top:20px;">
         <h3 style="margin-bottom:5px;">📊 CGPA Performance Legend</h3>
         <ul style="list-style:none; padding-left:0; margin-top:0; margin-bottom:0; font-size:14px;">
             <li style="margin-bottom:12px;"><b>3.70 - 4.00</b>: Excellent</li>
