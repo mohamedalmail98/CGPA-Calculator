@@ -26,7 +26,6 @@ def cgpa_legend(cgpa):
 st.sidebar.title("📘 Grade Point Legend")
 for grade, point in grade_points.items():
     st.sidebar.markdown(f"**{grade}** = {point}")
-
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📊 CGPA Performance Legend")
 st.sidebar.markdown("""
