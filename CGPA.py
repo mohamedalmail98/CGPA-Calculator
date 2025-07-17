@@ -17,7 +17,7 @@ for grade, point in grade_points.items():
     st.sidebar.markdown(f"**{grade}** = {point}")
 
 # ---------- Main App ----------
-st.title("🎓 GPA & CGPA Calculator")
+st.title("🎓 Masters GPA & CGPA Calculator")
 
 # ---------- Number of Semesters ----------
 num_semesters = st.number_input("Enter number of semesters:", min_value=1, max_value=12, step=1)
